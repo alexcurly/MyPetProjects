@@ -59,6 +59,22 @@ public void overwriteFile(LinkedList<Member> m) {
 
   try(BufferedWriter write = new
       BufferedWriter(New FileWriter("member.temp", false))) {
-    for (int i=0; i< m.)
+    for (int i=0; i< m.size(); i++)
+        {
+            s = m.get(i).toString();
+            write.write(s + "\n");
+        }
+      }catch(IOException e){
+      System.out.println(e.getMessage());
       }
+    try{
+        File f = new File("members.csv");
+        File tf = new File("members.temp");
+
+        f.delet();
+        tf.renameTo(f);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
 }
