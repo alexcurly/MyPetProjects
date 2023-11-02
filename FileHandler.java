@@ -72,7 +72,7 @@ public class FileHandler {
             File f = new File("members.csv");
             File tf = new File("members.temp");
 
-            f.delet();
+            f.delete();
             tf.renameTo(f);
         }catch(Exception e){
             System.out.println(e.getMessage());
