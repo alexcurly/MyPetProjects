@@ -5,8 +5,3 @@
 #### [class MembershipManagement](/MembershipManagement.java)
 * []()
 * []()
-
-1
-1
-1
-1
